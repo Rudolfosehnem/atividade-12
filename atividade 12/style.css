@@ -1,0 +1,230 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121a21;
+    color: #c7d5e0;
+    margin: 0;
+    padding: 0;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background-color: #121a21;
+    border-bottom: 1px solid #1b2838;
+  }
+  header button {
+    font-size: 24px;
+    color: #c7d5e0;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  header img {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+  }
+  header span {
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    user-select: none;
+  }
+  main {
+    padding: 12px 16px;
+  }
+  .main-steam{
+    text-align: center;
+  }
+  p.description {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+  h2.section-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #8a9ba8;
+    margin-bottom: 6px;
+    user-select: none;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .tag {
+    background-color: #2a475e;
+    color: #7ea9e1;
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    user-select: none;
+    cursor: default;
+    border: none;
+  }
+  .reviews {
+    background-color: #1b2838;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 11px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+  .reviews .neutral {
+    font-weight: 600;
+    color: #d7a965e3;
+  }
+  .reviews .neutral-percent {
+    color: #8a9ba8;
+  }
+  .reviews .slightly-negative {
+    color: #b35b1e;
+  }
+  .reviews .slightly-negative-percent {
+    color: #8a9ba8;
+  }
+  .main-image {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 8px;
+  }
+  .thumbnails {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+  .thumbnail {
+    width: 33.33%;
+    border-radius: 6px;
+    object-fit: cover;
+    height: 50px;
+    position: relative;
+  }
+  .thumbnail.play-border {
+    border: 2px solid #f3a712;
+  }
+  .thumbnail.play-border i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    pointer-events: none;
+    text-shadow: 0 0 4px rgba(0,0,0,0.7);
+  }
+  .login-prompt {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .flag-button {
+    background-color: #2a475e;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    border: none;
+    color: #c7d5e0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+  .purchase-section {
+    background-image: linear-gradient(to bottom right, #1B2A35, #4B5B6B);
+    border-radius: 6px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .purchase-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #c7d5e0;
+  }
+  .purchase-header button {
+    background: none;
+    border: none;
+    color: #c7d5e0;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .purchase-header button:hover {
+    color: white;
+  }
+  .image_top{
+    border-radius: 30px;
+  
+  }
+  .purchase-buttons {
+    display: flex;
+    gap: 12px;
+  }
+  .price-button {
+    background-color: #171a21;
+    color: #c7d5e0;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: 600;
+    border: none;
+    flex-grow: 1;
+    cursor: default;
+    user-select: none;
+  }
+  .cart-button {
+    background-color: #59BF40;
+    color: white;
+    border-radius: 3px;
+    padding: 8px 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .preco-button {
+    background-color: #2f20b3;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+a{
+  text-decoration: none;
+  color: #c7d5e0;
+}
+  
+.backbotton{
+  background-color: #0a0a0a;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  position: fixed;
+  top: 20px;
+  left: 20px;  
+  
+}

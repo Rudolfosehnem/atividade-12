@@ -1,99 +1,67 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Variação de Preço do Jogo</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-    }
-
-    h2 {
-      text-align: center;
-    }
-
-    .grafico-linha {
-      position: relative;
-      width: 600px;
-      height: 300px;
-      border-left: 2px solid #333;
-      border-bottom: 2px solid #333;
-      margin: auto;
-    }
-
-    .linha {
-      position: absolute;
-      width: 2px;
-      background: #4CAF50;
-      transform-origin: bottom left;
-    }
-
-    .ponto {
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      background: #2196F3;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .rotulo {
-      position: absolute;
-      transform: translateX(-50%);
-      top: 100%;
-      margin-top: 10px;
-      font-size: 14px;
-    }
-
-    .preco {
-      position: absolute;
-      left: -40px;
-      font-size: 14px;
-    }
-
-    /* Linhas horizontais de referência */
-    .linha-ref {
-      position: absolute;
-      width: 100%;
-      height: 1px;
-      background: #ccc;
-    }
-
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Steam Call of Duty Black Ops 6</title>
+    <link rel="stylesheet" href="../Atividade-12---Cria--o-de-Nova-Funcionalidade-para-Aplicativo-Existente/style.css/style.css">
+   
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
-
-  <h2>Variação de Preço do Jogo (últimos 6 meses)</h2>
-
-  <div class="grafico-linha" id="grafico">
-    <!-- Linhas de referência -->
-    <div class="linha-ref" style="top: 0%;"><span class="preco" style="top: -8px;">R$600</span></div>
-    <div class="linha-ref" style="top: 25%;"><span class="preco" style="top: -8px;">R$525</span></div>
-    <div class="linha-ref" style="top: 50%;"><span class="preco" style="top: -8px;">R$450</span></div>
-    <div class="linha-ref" style="top: 75%;"><span class="preco" style="top: -8px;">R$375</span></div>
-    <div class="linha-ref" style="top: 100%;"><span class="preco" style="top: -8px;">R$300</span></div>
-
-    <!-- Pontos e rótulos dos meses -->
-    <div class="ponto" style="left: 10%; top: 33%;"></div>
-    <div class="rotulo" style="left: 10%;">Dez</div>
-
-    <div class="ponto" style="left: 25%; top: 25%;"></div>
-    <div class="rotulo" style="left: 25%;">Jan</div>
-
-    <div class="ponto" style="left: 40%; top: 41%;"></div>
-    <div class="rotulo" style="left: 40%;">Fev</div>
-
-    <div class="ponto" style="left: 55%; top: 50%;"></div>
-    <div class="rotulo" style="left: 55%;">Mar</div>
-
-    <div class="ponto" style="left: 70%; top: 30%;"></div>
-    <div class="rotulo" style="left: 70%;">Abr</div>
-
-    <div class="ponto" style="left: 85%; top: 20%;"></div>
-    <div class="rotulo" style="left: 85%;">Mai</div>
-  </div>
-
+  <header>
+    <button aria-label="Menu"><i class="fas fa-bars"></i></button>
+    <img  class="image_top" src="../Atividade-12---Cria--o-de-Nova-Funcionalidade-para-Aplicativo-Existente/images/steam.png" alt=""  />
+    <span>       STEAM</span>
+  </header>
+  <main>
+    <p class="description">
+      Call of Duty®: Black Ops 6 é a assinatura Black Ops em uma Campanha cinemática para um jogador, a melhor experiência Multijogador da categoria e o retorno épico do modo Zumbis por Rodada.
+    </p>
+    <section>
+      <h2 class="section-title">Marcadores</h2>
+      <div class="tags">
+        <button class="tag">Ação</button>
+        <button class="tag">Multijogador</button>
+        <button class="tag">Tiro</button>
+        <button class="tag">Militar</button>
+        <button class="tag">+</button>
+      </div>
+    </section>
+    <section>
+      <h2 class="section-title">Análises</h2>
+      <div class="reviews">
+        <span class="neutral">Neutras</span> <span class="neutral-percent">(45% de 11,525)</span> DESDE O INÍCIO<br />
+        <span class="slightly-negative">Ligeiramente negativas</span> <span class="slightly-negative-percent">(34% de 422)</span> RECENTES
+      </div>
+    </section>
+    <section>
+      <img class="main-image" src="../Atividade-12---Cria--o-de-Nova-Funcionalidade-para-Aplicativo-Existente/images/queixo.png" alt="" />
+      <div class="thumbnails">
+        <img class="thumbnail" src="../Atividade-12---Cria--o-de-Nova-Funcionalidade-para-Aplicativo-Existente/images/arma verde.png" alt="" />
+        <img class="thumbnail" src="../Atividade-12---Cria--o-de-Nova-Funcionalidade-para-Aplicativo-Existente/images/arma de choque.png" alt="" />
+        <div class="thumbnail play-border" style="position: relative;">
+          <img src="../Atividade-12---Cria--o-de-Nova-Funcionalidade-para-Aplicativo-Existente/images/arma vermelha.png" alt="" style="border-radius: 6px; width: 100%; height: 50px; object-fit: cover;" />
+          <i class="fas fa-play" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 20px; pointer-events: none; text-shadow: 0 0 4px rgba(0,0,0,0.7);"></i>
+        </div>
+      </div>
+    </section>
+    <section>
+      <p class="login-prompt"><strong>Inicie a sessão</strong> para adicionar este item à sua lista de desejos, segui-lo ou ignorá-lo</p>
+      <button aria-label="Adicionar à lista de desejos" class="flag-button"><i class="fas fa-flag"></i></button>
+    </section>
+    <section class="purchase-section">
+      <div class="purchase-header">
+        <span>Comprar Call of Duty®: Black Ops 6</span>
+        <button aria-label="Alternar visualização"><i class="fas fa-th-large"></i></button>
+      </div>
+      <div class="purchase-buttons">
+        <button class="price-button" disabled>R$ 339,00</button>
+        <button class="cart-button">+ Carrinho</button>
+        <button class="preco-button"><a href="grafico.html">Historico de Preço</a></button>
+      </div>
+    </section>
+  </main>
 </body>
-
 </html>

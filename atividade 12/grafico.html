@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Variação de Preço do Jogo</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="../Atividade-12---Cria--o-de-Nova-Funcionalidade-para-Aplicativo-Existente/style.css/style.css">
+ 
+</head>
+<body>
+  <div class="grafico-container">
+    <h2>Variação de Preço do Call of Duty®: Black Ops 6 (R$)</h2>
+    <canvas id="graficoPreco"></canvas>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('graficoPreco').getContext('2d');
+    const grafico = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago'],
+        datasets: [{
+          label: 'Preço (R$)',
+          data: [580, 540, 510, 490, 450, 430, 390, 360],
+          backgroundColor: 'rgba(52, 152, 219, 0.2)',
+          borderColor: 'rgba(41, 128, 185, 1)',
+          borderWidth: 3,
+          pointBackgroundColor: 'rgba(41, 128, 185, 1)',
+          fill: true,
+          tension: 0.3
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            suggestedMin: 300,
+            suggestedMax: 600,
+            title: {
+              display: true,
+              text: 'Preço (R$)'
+            }
+          },
+          x: {
+            title: {
+              display: true,
+              text: 'Mês'
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            display: true,
+            position: 'top'
+          },
+          tooltip: {
+            mode: 'index',
+            intersect: false
+          }
+        }
+      }
+    });
+  </script>
+<button class="backbotton"><a href="index.html">Voltar</a></button>
+
+</body>
+</html>
